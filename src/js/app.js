@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const newsContainer = document.getElementById('newsContainer');
     
     function getAllNews(){
-        let url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=59e016d648a44ed4ac0e452c04cf2730'
+        let url = 'https://newsapi.org/v2/top-headlines?country=us&pageSize=21&apiKey=59e016d648a44ed4ac0e452c04cf2730'
     
         let req = new Request(url)
     
