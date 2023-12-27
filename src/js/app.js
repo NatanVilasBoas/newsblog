@@ -55,9 +55,8 @@ function getAllNews(category = ''){
 }
 
 function onCategoryClick(selectedCategory) {
-    // Limpa o conteúdo existente
+    
     document.getElementById('newsContainer').innerHTML = '';
 
-    // Chama a função getAllNews com a categoria selecionada
     getAllNews(selectedCategory);
 }
