@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!--Links padrão-->
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/app.js"></script>
+    
     
     <title>Início</title>
 </head>
@@ -23,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Mais Relevantes</a>
+                <a class="nav-link" aria-current="page" href="./index.html">Mais Relevantes</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,8 +44,8 @@
               </li>
             </ul>
             <form class="d-flex" role="search" onsubmit="return searchFormSubmit();">
-              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit" onclick="searchFor()">Search</button>
+              <input id="searchBar" class="search-bar" placeholder="Digite aqui...">
+              <button class="btn-search" type="submit" onclick="searchFor()"><ion-icon name="search-sharp"></ion-icon></button>
             </form>
           </div>
         </div>
@@ -54,6 +58,7 @@
     <footer>
         <div>
             <p>Criado por <strong><i>Natan200-2</i></strong></p>
+            <p>Copyright <strong>Natan Vilas Boas</strong></p>
         </div>
     </footer>
 </body>

@@ -11,16 +11,53 @@ body{
 footer{
     position: fixed;
     bottom: 0;
-    width: 98.89vw;
-    height: 4rem;
+    width: 100vw;
+    height: 6rem;
     padding: 1rem;
     background-color: #7c7c7dc3;
 }
 
 .navbar{
-    height: 5rem;
+    padding: 1rem;
     background-color: #11235A;
     margin-bottom: 1rem;
+}
+
+.nav-link{
+    color: white;
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.search-bar{
+    border: 1px solid white;
+    border-radius: 12px;
+    background-color: transparent;
+    color: white;
+    width: 8rem;
+    padding: 4px;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    transition: width 0.3s ease-in-out;
+}
+  
+  .search-bar:focus {
+    width: 17rem;
+  }
+
+.btn-search{
+    background-color: transparent;
+    width: 3rem;
+    border: 1px solid white;
+    color: white;
+    padding-top: 5px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-search:hover{
+    background-color: white;
+    color: black;
 }
 
 .col-md-3{
