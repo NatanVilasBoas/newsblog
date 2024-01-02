@@ -27,17 +27,22 @@ function getAllNews(category = ''){
 
             newsElement.className = 'col-lg-3 col-md-5 col-sm-7';
 
-            newsElement.innerHTML= `
-            <div class="card mb-5" style="width: 18rem;">
-                <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
-                <div class="card-body">
-                    <h5 class="card-title">${news.title}</h5>
-                    <p class="card-text">${news.description}</p>
-                </div>
-            </div>`
-            row.appendChild(newsElement);
-
-            count++
+            if(news.title == "[Removed]" && news.description == "[Removed]" && news.content == "[Removed]" && news.url == "https://removed.com"){
+                newsElement.innerHTML= "";
+                count ++
+            } else{
+                newsElement.innerHTML= `
+                <div class="card mb-5" style="width: 18rem;">
+                    <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${news.title}</h5>
+                        <p class="card-text">${news.description}</p>
+                    </div>
+                </div>`
+                row.appendChild(newsElement);
+    
+                count++
+            }
 
             if(count == 3){
                 newsContainer.appendChild(row);
@@ -89,6 +94,8 @@ function searchFor(search){
     `from=${ano}-${mes-1}-${dia}&` +
     `to=${ano}-${mes}-${dia}&` +
     'sortBy=popularity&' +
+    'pageSize=30&' +
+    'searchIn=title&' +
     'apiKey=59e016d648a44ed4ac0e452c04cf2730';
 
     let req = new Request(url);
@@ -108,10 +115,10 @@ function searchFor(search){
         data.articles.forEach(news => {
             const newsElement = document.createElement('div');
 
-            newsElement.className = 'col-md-3';
+            newsElement.className = 'col-lg-3 col-md-5 col-sm-7';
 
             newsElement.innerHTML= `
-            <div class="card mb-5" style="width: 20rem;">
+            <div class="card mb-5" style="width: 18rem;">
                 <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
                 <div class="card-body">
                     <h5 class="card-title">${news.title}</h5>
