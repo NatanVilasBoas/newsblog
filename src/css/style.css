@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
 
 main{
     align-items: center;
@@ -24,6 +29,7 @@ footer{
 }
 
 .nav-link{
+    font-family: 'Montserrat', sans-serif;
     color: #EEEEEE;
     font-size: 20px;
     margin-left: 2rem;
@@ -36,12 +42,18 @@ footer{
 .dropdown-menu{
     background-color: #EEEEEE;
 }
+
+.dropdown-item{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .dropdown-item:hover{
     background-color: #141E61;
     color: #EEEEEE;
 }
 
 .search-bar{
+    font-family: 'Montserrat', sans-serif;
     border: 1px solid #EEEEEE;
     border-radius: 12px;
     background-color: transparent;
@@ -72,6 +84,11 @@ footer{
     color: black;
 }
 
+.navbar-toggler{
+    color: #EEEEEE;
+    border: none;
+}
+
 .col-md-3{
     margin: 0 auto;
 }
@@ -79,4 +96,14 @@ footer{
 .card{
     border-radius: 15px;
     background-color: #EEEEEE;
+}
+
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.card-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
