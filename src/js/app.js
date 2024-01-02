@@ -64,7 +64,7 @@ function onCategoryClick(selectedCategory) {
 }
 
 function searchFormSubmit() {
-    const searchTerm = document.getElementById('searchBAr').value;
+    const searchTerm = document.getElementById('searchBar').value;
     searchFor(searchTerm);
 
     return false;
