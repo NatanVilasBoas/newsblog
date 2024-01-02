@@ -107,8 +107,12 @@ footer a{
 }
 
 .card{
-    border-radius: 15px;
+    border-radius: 12px;
     background-color: #EEEEEE;
+}
+
+.card img{
+    border-radius: inherit;
 }
 
 body.dark-mode .card {
