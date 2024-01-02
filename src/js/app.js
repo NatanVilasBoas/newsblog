@@ -25,7 +25,7 @@ function getAllNews(category = ''){
         data.articles.forEach(news => {
             const newsElement = document.createElement('div');
 
-            newsElement.className = 'col-md-3';
+            newsElement.className = 'col-lg-3 col-md-5 col-sm-7';
 
             newsElement.innerHTML= `
             <div class="card mb-5" style="width: 18rem;">
