@@ -99,11 +99,13 @@ footer{
 }
 
 .card-title{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .card-text{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(20px / 1.618);
     font-weight: 300;
 }
