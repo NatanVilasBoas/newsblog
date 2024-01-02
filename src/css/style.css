@@ -1,11 +1,11 @@
 
 main{
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 5rem;
 }
 
 body{
-    background-color: #fffdee;
+    background-color: #eaeaf1;
 }
 
 footer{
@@ -24,16 +24,28 @@ footer{
 }
 
 .nav-link{
-    color: white;
+    color: #EEEEEE;
     font-size: 20px;
     margin-left: 2rem;
 }
 
+.nav-link:focus,.nav-link:hover,.nav-link:active{
+    color: #787A91;
+}
+
+.dropdown-menu{
+    background-color: #EEEEEE;
+}
+.dropdown-item:hover{
+    background-color: #141E61;
+    color: #EEEEEE;
+}
+
 .search-bar{
-    border: 1px solid white;
+    border: 1px solid #EEEEEE;
     border-radius: 12px;
     background-color: transparent;
-    color: white;
+    color: #EEEEEE;
     width: 8rem;
     padding: 4px;
     margin-right: 1rem;
@@ -41,22 +53,22 @@ footer{
     transition: width 0.3s ease-in-out;
 }
   
-  .search-bar:focus {
+.search-bar:focus {
     width: 17rem;
-  }
+}
 
 .btn-search{
     background-color: transparent;
     width: 3rem;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #EEEEEE;
+    color: #EEEEEE;
     padding-top: 5px;
     border-radius: 12px;
     transition: background-color 0.2s ease-in-out;
 }
 
 .btn-search:hover{
-    background-color: white;
+    background-color: #EEEEEE;
     color: black;
 }
 
@@ -66,4 +78,5 @@ footer{
 
 .card{
     border-radius: 15px;
+    background-color: #EEEEEE;
 }

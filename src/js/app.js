@@ -28,7 +28,7 @@ function getAllNews(category = ''){
             newsElement.className = 'col-md-3';
 
             newsElement.innerHTML= `
-            <div class="card mb-5" style="width: 20rem;">
+            <div class="card mb-5" style="width: 18rem;">
                 <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
                 <div class="card-body">
                     <h5 class="card-title">${news.title}</h5>
