@@ -15,6 +15,11 @@ body{
     min-height: 100vh;
 }
 
+body.dark-mode{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
 footer{
     width: 100%;
     height: 7rem;
@@ -104,6 +109,19 @@ footer a{
 .card{
     border-radius: 15px;
     background-color: #EEEEEE;
+}
+
+body.dark-mode .card {
+    background-color: #787A91;
+    color: #fff;
+}
+
+body.dark-mode .card-title {
+    color: #EEEEEE; 
+}
+
+body.dark-mode .card-text {
+    color: #EEEEEE; 
 }
 
 .card-title{
