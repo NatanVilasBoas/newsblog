@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function getAllNews(category = ''){
-    let url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=21&apiKey=59e016d648a44ed4ac0e452c04cf2730&category=${category}`
+    let url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=30&apiKey=59e016d648a44ed4ac0e452c04cf2730&category=${category}`
 
     let req = new Request(url)
 
@@ -23,17 +23,16 @@ function getAllNews(category = ''){
         row.className = "row";
 
         data.articles.forEach(news => {
-            const newsElement = document.createElement('div');
-
-            newsElement.className = 'col-lg-3 col-md-5 col-sm-7';
-
-            if(news.title == "[Removed]" && news.description == "[Removed]" && news.content == "[Removed]" && news.url == "https://removed.com"){
-                newsElement.innerHTML= "";
-                count ++
+            if(news.title == "[Removed]" && news.description == "[Removed]" && news.url == "https://removed.com" || news.description == null){
+                return;
             } else{
+                const newsElement = document.createElement('div');
+
+                newsElement.className = 'col-lg-3 col-md-5 col-sm-7';
+
                 newsElement.innerHTML= `
                 <div class="card mb-5" style="width: 18rem;">
-                    <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
+                    ${news.urlToImage == null ? '' : `<img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">`}
                     <div class="card-body">
                         <h5 class="card-title">${news.title}</h5>
                         <p class="card-text">${news.description}</p>
@@ -119,7 +118,7 @@ function searchFor(search){
 
             newsElement.innerHTML= `
             <div class="card mb-5" style="width: 18rem;">
-                <img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">
+                ${news.urlToImage == null ? '' : `<img src="${news.urlToImage}" class="card-img-top" alt="${news.title}">`}
                 <div class="card-body">
                     <h5 class="card-title">${news.title}</h5>
                     <p class="card-text">${news.description}</p>
