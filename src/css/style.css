@@ -100,6 +100,22 @@ footer a{
     border: none;
 }
 
+.btn-dark-mode{
+    background-color: transparent;
+    margin-left: 5px;
+    width: 2rem;
+    border: 1px solid #EEEEEE;
+    color: #EEEEEE;
+    padding-top: 5px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-dark-mode:hover{
+    background-color: #EEEEEE;
+    color: black;
+}
+
 /*Cards*/
 
 .col-lg-3{
