@@ -23,6 +23,10 @@ footer{
     color: #EEEEEE;
 }
 
+footer a{
+    color: #EEEEEE;
+}
+
 /*Navbar*/
 .navbar{
     padding: 1rem;
