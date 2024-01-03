@@ -11,12 +11,14 @@ main{
 }
 
 body{
-    background-color: #eaeaf1;
+    background: rgb(27,43,136);
+    background: linear-gradient(0deg, rgb(43, 63, 175) 0%, rgba(97,94,223,1) 49%, rgb(175, 193, 249) 100%);
     min-height: 100vh;
 }
 
 body.dark-mode{
-    background-color: #1a1a1a;
+    background: rgb(16,22,52);
+    background: linear-gradient(0deg, rgba(16,22,52,1) 0%, rgba(54,52,125,1) 49%, rgba(100,105,121,1) 100%);
     color: #fff;
 }
 
