@@ -15,6 +15,11 @@ body{
     min-height: 100vh;
 }
 
+body.dark-mode{
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
 footer{
     width: 100%;
     height: 7rem;
@@ -49,8 +54,16 @@ footer a{
     background-color: #EEEEEE;
 }
 
+body.dark-mode .dropdown-menu{
+    background-color: #6a6c7e;
+}
+
 .dropdown-item{
     font-family: 'Montserrat', sans-serif;
+}
+
+body.dark-mode .dropdown-item{
+    color: #EEEEEE;
 }
 
 .dropdown-item:hover{
@@ -95,6 +108,22 @@ footer a{
     border: none;
 }
 
+.btn-dark-mode{
+    background-color: transparent;
+    margin-left: 12px;
+    width: 2rem;
+    border: 1px solid #EEEEEE;
+    color: #EEEEEE;
+    padding-top: 5px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-dark-mode:hover{
+    background-color: #EEEEEE;
+    color: black;
+}
+
 /*Cards*/
 
 .col-lg-3{
@@ -102,8 +131,26 @@ footer a{
 }
 
 .card{
-    border-radius: 15px;
+    border-radius: 12px;
     background-color: #EEEEEE;
+}
+
+.card img{
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+body.dark-mode .card {
+    background-color: #787A91;
+    color: #fff;
+}
+
+body.dark-mode .card-title {
+    color: #EEEEEE; 
+}
+
+body.dark-mode .card-text {
+    color: #EEEEEE; 
 }
 
 .card-title{
