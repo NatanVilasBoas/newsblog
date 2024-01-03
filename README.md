@@ -6,6 +6,8 @@ Neste site é possível visualizar as principais notícias do dia na página ini
 
 Além disso, também possui tema claro e escuro, que podem ser alterados no ícone de lua ao lado da lupa de pesquisa.
 
+![Demonstração](https://github.com/Natan200-2/newsblog/blob/master/public/Demonstration.gif)
+
 ## Requisitos
 Para instalação e utilização do projeto em sua máquina é necessário ter disponível um acesso a servidor web localmente, como o Apache do XAMPP
 
