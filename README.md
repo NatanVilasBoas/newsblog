@@ -4,6 +4,8 @@ Este é um site de notícias, onde as notícias foram consultadas da API newsAPI
 
 Neste site é possível visualizar as principais notícias do dia na página inicial, consultar por categoria de notícias e pesquisar por uma notícia, na pesquisa é gerado todas as notícias que foram criadas dentro de um período de 1 mês com a palavra chave da pesquisa.
 
+Além disso, também possui tema claro e escuro, que podem ser alterados no ícone de lua ao lado da lupa de pesquisa.
+
 ## Requisitos
 Para instalação e utilização do projeto em sua máquina é necessário ter disponível um acesso a servidor web localmente, como o Apache do XAMPP
 
