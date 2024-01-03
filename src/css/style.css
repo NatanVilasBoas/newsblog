@@ -54,8 +54,16 @@ footer a{
     background-color: #EEEEEE;
 }
 
+body.dark-mode .dropdown-menu{
+    background-color: #6a6c7e;
+}
+
 .dropdown-item{
     font-family: 'Montserrat', sans-serif;
+}
+
+body.dark-mode .dropdown-item{
+    color: #EEEEEE;
 }
 
 .dropdown-item:hover{
@@ -129,6 +137,7 @@ footer a{
 
 .card img{
     border-radius: inherit;
+    overflow: hidden;
 }
 
 body.dark-mode .card {
