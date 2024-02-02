@@ -1,3 +1,0 @@
-[build]
-  base = "newsblog"  # Diretório base
-  publish = "newsblog/src"  # Diretório de publicação
