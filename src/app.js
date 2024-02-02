@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function getAllNews(category = ''){
-    let url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=30&apiKey=59e016d648a44ed4ac0e452c04cf2730&category=${category}`
+    let url = `https://newsapi.org/v2/top-headlines?country=us&pageSize=30&apiKey=dd30ca3dde8f4089948f0790051fc1eb&category=${category}`
 
     let req = new Request(url)
 
