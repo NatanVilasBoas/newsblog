@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link Boostrap-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Ionicons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--Links padrão-->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js"></script>
+    
+    
+    <title>Início</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="grid-outline"></ion-icon>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Mais Relevantes</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('technology')">Tecnologia</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('sports')">Esportes</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('entertainment')">Entretenimento</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('business')">Negócios</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('health')">Saúde e bem estar</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="onCategoryClick('science')">Ciência</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" onsubmit="return searchFormSubmit();">
+              <input id="searchBar" class="search-bar" placeholder="Digite aqui...">
+              <button class="btn-search" type="submit" onclick="searchFor()"><ion-icon name="search-sharp"></ion-icon></button>
+            </form>
+            <button id="toggle-dark-mode" class="btn-dark-mode"><ion-icon name="moon-outline"></ion-icon></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="newsContainer" class="newsContainer">
+      </div>
+    </main>
+    <footer>
+        <div>
+            <p>Criado por <a href="https://github.com/NatanVilasBoas">NatanVilasBoas</a></p>
+            <p>Copyright &copy; Natan Vilas Boas - 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
